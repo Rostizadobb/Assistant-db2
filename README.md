@@ -102,14 +102,14 @@ El diálogo tiene nodos para manejar las preguntas de ayuda y de agradecimiento.
 
 El nodo "buscar eventos" clarifica si los sucesos se buscan por su identificador o por fecha. Realizan la búsqueda real y la recopilación de los datos necesarios en los nodos hijo query events by shortname y query event by dates.
 
-9. En la parte izquierda de la interfaz, pulse Opciones y luego Webhooks. Sustituye el valor de URL por el que obtuvimos en la sección anterior. Añada .json al URL para indicar que se deben devolver datos JSON. No olvides sustituir el valor HEADER VALUE por el valor "YOURSECRET" que establecimos anteriormente.
+10. En la parte izquierda de la interfaz, pulse Opciones y luego Webhooks. Sustituye el valor de URL por el que obtuvimos en la sección anterior. Añada .json al URL para indicar que se deben devolver datos JSON. No olvides sustituir el valor HEADER VALUE por el valor "YOURSECRET" que establecimos anteriormente.
 
 ![](assets/9.png)<br/> 
 
-10. Hacemos clic en el botón "Try it" en la parte superior derecha para ver al chatbot en acción. Podemos escribir cosas como "Quiero crear un nuevo evento" para que podamos registrar un nuevo evento, o podemos escribir algo como "mostrar información de eventos" para que podamos consultar los eventos guardados.
+11. Hacemos clic en el botón "Try it" en la parte superior derecha para ver al chatbot en acción. Podemos escribir cosas como "Quiero crear un nuevo evento" para que podamos registrar un nuevo evento, o podemos escribir algo como "mostrar información de eventos" para que podamos consultar los eventos guardados.
 
 ![](assets/10.png)<br/> 
-
+ 
 # Creación de un asistente para despliegue
 1. Damos clic en "Assistant" en el área de navegación superior izquierda y, a continuación, damos clic en "Create assistant".
 
@@ -120,6 +120,20 @@ El nodo "buscar eventos" clarifica si los sucesos se buscan por su identificador
 ![](assets/12.png)<br/> 
 Añadimos el skill que acabamos de importar.
 
-# Despliegue del assistant: Wordpress
+3. Damos clic en los 3 puntos que se encuentra en la esquina superior derecha y damos clic en el apartado "settings"
+![](assets/14.png)<br/> 
 
+4. Damos clic en el apartado "API DETAILS" y copiamos los valores "Assistant URL" Y "API KEY"
+![](assets/15.png)<br/> 
+
+# Despliegue del assistant: Wordpress
+**Nota: para esta parte del chatbot, necesitas tener una cuenta de wordpress creada con un dominio arriba, si quieres utilizar un dominio de prueba, puedes utilizar el proporcionado por el sitio de cognitiveclass, ahí podrás desplegar un assistant desde cero, ingresa a esta [**LIGA**](https://cognitiveclass.ai/courses/how-to-build-a-chatbot) **e inscribete al curso (Modulo 5, laboratorio 8).
+
+Para enlazar este asistente a wordpress, buscamos el plugin de watson assistant desde el apartado "Plugins" y damos clic en "install now"
+
+![](assets/13.png)<br/> 
+
+Una vez instalado podemos visualizar el plugin desde el apartado de "settings", en el apartado "Watson", por ahora, en ese apartado damos clic en el apartado "Main Setup", ahí vamos a colocar las credenciales del chatbot qué obtuvimos previamente. Colocamos en el apartado "Username" la palabra "apikey", en el apartado "Assistant URL" el url que copiamos previamente y en "API KEY" la clave de API que copiamos previamente. Finalmente damos clic en "Save changes"
+
+![](assets/16.png)<br/> 
 
